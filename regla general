@@ -1,0 +1,29 @@
+function setup() {
+  createCanvas(400, 400);
+}
+
+function draw() {
+  background(220);
+  var A = 1;
+  var B = 8;
+  var C = 3;
+  var x = general1(A, B, C);
+  var y = general2(A, B, C);
+
+  console.log(x);
+  console.log(y);
+}
+
+function general1(A, B, C) {
+  var x;
+  x = (-B + sqrt((pow(B, 2) - (4 * A * C)))) / (2 * A);
+
+  return x;
+}
+
+function general2(A, B, C) {
+  var y;
+  y = (-B - sqrt((pow(B, 2) - (4 * A * C)))) / (2 * A);
+
+  return y;
+}
