@@ -1,0 +1,16 @@
+function setup() {
+  createCanvas(400, 400);
+}
+
+function draw() {
+  background(220);
+  var tempMtyF = 55.4;
+  tempMtyC = fahrenheitToF(tempMtyF);
+  console.log(tempMtyC);
+}
+
+function fahrenheitToF(tempF){
+  var tempC;
+  tempC = (tempF - 32) * (5/9);
+  return tempC;
+}
